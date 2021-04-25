@@ -1,0 +1,12 @@
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    Details Page
+  </div>
+  <div class="panel-body">
+    details for the product is :  {{id}}
+    <h2 *ngFor="let prod of details">{{prod.productName}}</h2>
+    <img *ngFor="let prod of details" [src] = "prod.imageUrl">
+    <p *ngFor="let prod of details">{{prod.description}}</p>
+    <button type="button" class="btn btn-danger" (click)="goBack()">Back</button>
+  </div>
+</div>
